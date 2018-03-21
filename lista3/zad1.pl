@@ -15,4 +15,4 @@ wariancja(Wariancja, Lista) :-
 sumaWariancyjna(0,[], _).
 sumaWariancyjna(Suma, [X|Lista], Srednia):-
     sumaWariancyjna(Suma2, Lista, Srednia),
-    Suma is Suma2+(X-Srednia)*(X+Srednia).
+    Suma is Suma2+(X-Srednia)*(X-Srednia).
