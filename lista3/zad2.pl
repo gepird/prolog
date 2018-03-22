@@ -17,4 +17,8 @@ jestTablicaMaxow([X|Lista], [MaxDlaX|Maxy], BiezacaSuma):-
 
 max_sum(Lista, Suma):-
     jestTablicaMaxow(Lista, Maxy, 0),
-    maximum(Maxy, Suma).
+    maximum(Maxy, Suma2),
+    (Suma2<0 ->
+        Suma=0;
+        Suma=Suma2
+    ).
