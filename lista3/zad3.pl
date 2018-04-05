@@ -9,8 +9,8 @@ even_permutation(Lista, Permutacja):-
     LiczbaInwersji mod 2 =:= 0.
 
 odd_permutation(Lista, Permutacja):-
-        permutacja(Lista, Permutacja, LiczbaInwersji, 0),
-        LiczbaInwersji mod 2 =:= 1.
+    permutacja(Lista, Permutacja, LiczbaInwersji, 0),
+    LiczbaInwersji mod 2 =:= 1.
 
 permutacja([], [], LiczbaInwersji, LiczbaInwersji).
 permutacja(Lista, [X|Permutacja2], LiczbaInwersji, Licznik):-
